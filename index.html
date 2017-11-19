@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery-3.2.1.slim.min.js"></script>
+    <script src="tether.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" src="text/css" href="simon.css">
+    <script src="simon.js"></script>
+    <title>Simon</title>
+    <link rel="icon" type="img/png" href="">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row settings">
+        <div class="col-4">
+          <div class="btn btn-primary start">start</div>
+          <div class="btn btn-primary reset">reset</div>
+        </div>
+        <div class="col-4 counter">0</div>
+        <div class="col-4 strict">
+          <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-outline-primary active strict-off">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked>off</input>
+            </label>
+            <label class="btn btn-outline-primary strict-on">
+              <input type="radio" name="options" id="option2" autocomplete="off">on</input>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 board green"></div>
+        <div class="col-6 board red"></div>
+        <div class="col-6 board yellow"></div>
+        <div class="col-6 board blue"></div>
+      </div>
+    </div>
+  </body>
+</html>

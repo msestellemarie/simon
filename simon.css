@@ -1,0 +1,44 @@
+body {
+  font-size: 30px;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.settings {
+  margin: 20px;
+}
+
+.board {
+  height: 200px;
+  line-height: 100px;
+}
+
+.settings, .board {
+  text-align: center;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.selected {
+  opacity: 0.5;
+}
+
+.green:hover, .red:hover, .blue:hover, .yellow:hover {
+  opacity: 0.5;
+}
