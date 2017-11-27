@@ -2,35 +2,40 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <script src="jquery-3.2.1.slim.min.js"></script>
-    <script src="tether.min.js"></script>
-    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://use.fontawesome.com/2fe4f6d642.js"></script>
     <link rel="stylesheet" src="text/css" href="simon.css">
     <script src="simon.js"></script>
     <title>Simon</title>
-    <link rel="icon" type="img/png" href="">
+    <link rel="icon" type="img/png" href="simon.png">
   </head>
   <body>
-    <div class="container">
-      <div class="row settings">
-        <div class="col-4">
-          <div class="btn btn-primary start">start</div>
-          <div class="btn btn-primary reset">reset</div>
-        </div>
-        <div class="col-4 counter">0</div>
-        <div class="col-4 strict">
-          <div class="btn-group" data-toggle="buttons">
-            <label class="btn btn-outline-primary active strict-off">
-              <input type="radio" name="options" id="option1" autocomplete="off" checked>off</input>
-            </label>
-            <label class="btn btn-outline-primary strict-on">
-              <input type="radio" name="options" id="option2" autocomplete="off">on</input>
-            </label>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col settings rounded text-center">
+          <div class="row">
+            <div class="col-12 counter">0</div>
+            <div class="col-12 counter-label">COUNT</div>
+            <div class="col-6">
+              <div class="start"><i class="fa fa-play-circle fa-4x" aria-hidden="true"></i></div>
+              <div class="reset"><i class="fa fa-repeat fa-4x" aria-hidden="true"></i></div>
+            </div>
+            <div class="col-6 strict">
+              <i class="fa fa-toggle-on fa-4x strict-on" aria-hidden="true"></i>
+              <i class="fa fa-toggle-off fa-4x strict-off" aria-hidden="true"></i>
+            </div>
+            <div class="col-6 start-label">START</div>
+            <div class="col-6 reset-label">RESET</div>
+            <div class="col-6">STRICT</div>
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row game">
         <div class="col-6 board green"></div>
         <div class="col-6 board red"></div>
         <div class="col-6 board yellow"></div>
