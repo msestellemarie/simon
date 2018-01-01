@@ -98,7 +98,7 @@ function compareMoves(){
 }
 
 function gameStatus(){
-  if(count === 5){
+  if(count === 20){
     $(".counter").text("🎉");
     setTimeout(function(){
       reset();
